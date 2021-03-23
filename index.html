@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+
+  <!-- Icons -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <title>Bubble Buy</title>
+</head>
+
+<body class="bg-top">
+  <!-- NAV -->
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-lx navbar-light">
+
+        <button class="navbar-toggler border-0 text-primary" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg> Menu
+        </button>
+
+        <a class="navbar-brand" href="#"><img src="..\img\logo bublebuy.svg" width="150px" alt=""></a>
+
+        <div class="collapse navbar-collapse ml-auto" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-primary" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Entrar
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+<!-- TEXTO PRINCIPAL -->
+  <div class="container my-5">
+    <h4 class="text-center">Selecione seu produto, o valor que deseja pagar,
+      quanto tempo pode esperar e pronto, assim que a oferta surgir a bublebuy
+      executa a compra para você.</h4>
+  </div>
+
+<!-- BARRA DE PESQUISA -->
+  <div class="container my-5">
+    <div class="row" align="center">
+      <!-- <div class="col-sm"></div> -->
+      <div class="input-group mx-auto col-12 col-md-8">
+        <input class="form-control input-search" type="search" value="Busque aqui seu produto ou marca" id="example-search-input">
+        <span class="input-group-append">
+          <button class="btn btn-outline-secondary btn-search" type="button">
+            <img class="mx-auto d-block" src="..\img\search-black-18dp.svg" width="20px" alt="" >
+          </button>
+        </span>
+      </div>
+      <!-- <div class="col-sm"></div> -->
+    </div>
+  </div>
+
+  <!-- CATEGORIAS -->
+  <div class="container my-5 d-flex justify-content-center">
+    <div class="row">
+      <div class="col-4 col-md-2 categorias">
+        <img class="mx-auto d-block" src="..\img\celular.svg" width="54px "alt="" >
+        <p class="text-center small">Celulares</p>
+      </div>
+
+      <div class="col-4 col-md-2 categorias">
+        <img class="mx-auto d-block" src="..\img\notebooks.svg" width="54px" alt="" >
+        <p class="text-center small">Notebooks</p>
+      </div>
+
+      <div class="col-4 col-md-2 categorias">
+        <img class="mx-auto d-block" src="..\img\game.svg" width="54px" alt="" >
+        <p class="text-center small">Games</p>
+      </div>
+
+      <div class="col-4 col-md-2 categorias">
+        <img class="mx-auto d-block" src="..\img\eletrodomesticos.svg" width="54px" alt="" >
+        <p class="text-center small">Eletrodomesticos</p>
+      </div>
+
+      <div class="col-4 col-md-2 categorias">
+        <img class="mx-auto d-block" src="..\img\todas-bolhas.svg" width="54px" alt="" >
+        <p class="text-center small">bolhas</p>
+      </div>
+
+      <div class="col-4 col-md-2 categorias">
+        <img class="mx-auto d-block" src="..\img\categorias.svg" width="54px" alt="" >
+        <p class="text-center small">Categorias</p>
+      </div>
+
+    </div>
+  </div>
+
+<!-- TÍTULO BOLHAS -->
+  <div class="container my-5">
+    <div class="row" align="center">
+      <div class="col-sm-12">
+        <h3>Bolhas prestes a estourar</h3>
+        <p class="text-primary">O que isso significa?</p>
+      </div>
+    </div>
+  </div>
+
+<!-- CARROSSEL -->
+  <div class="container my-5">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner row w-100 mx-auto">
+        <div class="carousel-item col-lg-3 active">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="..\img\violao.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg> 997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mx-auto">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="..\img\tv.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                   997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mb-2">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="img\ps5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                   997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mb-2">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="..\img\celular.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                   997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mb-2">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="img\notebook.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                   997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mb-2">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="..\img\tv.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                   997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mb-2">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid py-2" src="..\img\celular.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text small">Smartphone Samsung Galaxy A01 Core 32GB Preto - Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</p>
+              <p class="small">
+                <span class="font-weight-bold">R$600,40 à vista</span><br>
+                <span class="mb-3">12x de R$ 416,58 sem juros</span>
+              </p>  
+              <p class="small">
+                <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill text-primary" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                   997 aguardando.</small><br>
+                <small class="text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-eye-fill text-primary" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+                  30 visualizações agora</small>
+              </p>
+            
+              <div class="col-sm-12 mb-2">
+                <button type="button" class="btn-block btn btn-primary btn-rounded px-3">Entrar na bolha</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr- only">Next</span>
+      </a>
+    </div>
+  </div>
+
+<!-- VER TODAS AS BOLHAS -->
+  <div class="container my-5">
+    <div class="row" align="center">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-outline-primary btn-rounded px-3">Ver todas as bolhas 
+          <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle ml-1" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+        </svg>
+      </button>
+      </div>
+    </div>
+  </div>
+
+<!-- PESSOAS -->
+<div class="container">
+  <div class="row">
+    <img class="mx-auto d-block img-fluid " src="../img/pessoas.jpg" alt="">
+  </div>
+</div>
+
+<div class="container-fluid py-4  bg-primary">
+  <h4 class="text-center text-white">Lojas que podem atender seu pedido</h4>
+</div>
+  
+<!-- CARDS -->
+  <div class="container cards my-5">
+    <div class="row py-3 px-3">
+
+      <div class="col-sm-4">
+          <img class="img-fluid m-1" src="..\img\celular.jpg" alt="">
+          <div class="c-menu-informacoes">
+            <ul class="list-inline m-2 text-primary">
+              <li class="list-inline-item ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                  <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                </svg> Compartilhar</li>
+
+              <li class="list-inline-item ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                  <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                </svg> Sair da Bolha</li>
+            </ul>
+          </div>
+      </div>
+      
+      <div class="col-sm-8">
+        <h5 class="c-titulo-produto-card">Smartphone Samsung Galaxy A01 Core 32GB Preto - 
+          Quad-Core 2GB RAM Tela 5,3” Câm. 8MP + Selfie 5MP</h5>
+        <p class="c-endreco-envio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor-fill text-primary" viewBox="0 0 16 16">
+          <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+        </svg> Envia para Altamy, Rua tenente Manoel Eufásio</p>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-6 mb-2">
+                <ul class="list-group p-0">
+                  <li class="list-group-item p-1"><p class="">Minha Proposta
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill text-success" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
+                    </svg>
+                  </p>
+                  <h6 class="font-weight-bold">R$ 600,40 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill float-right text-primary" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                  </svg>
+                  <br><small>A vista</small>
+                  </li>
+
+                  <li class="list-group-item p-1">Margem de 10% 
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="16" fill="currentColor" class="bi bi-pencil-fill float-right text-primary" viewBox="0 0 16 16">
+                      <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                    </svg>
+                  </li>
+
+                  <li class="list-group-item p-1">Aguardar até 15/12/20 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill float-right text-primary" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                    </svg>
+                  </li>
+                  
+                  <li class="list-group-item p-1">Alterar forma de pagamento 
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="14" fill="currentColor" class="bi bi-pencil-fill float-right text-primary" viewBox="0 0 16 16">
+                      <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                    </svg>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-lg-6 historico-preco">
+                <img class="img-fluid" src="http://placehold.it/600x400/8e41f4/fff" alt="">
+                <p class="mt-2 text-primary">Ver Regulamento da bolha</p>
+              </div>
+          </div>
+        </div>
+        
+        <p class="border-bottom mt-2">Lojas que podem atender meu pedido 
+          <span class="ml-4 text-primary">
+            <strong>Adicionar
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill text-primary" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+            </strong>
+        </span></>
+        
+
+        <div class="btn btn-rounded btn-light btn-sm">Amazon</a>  
+          <svg  xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </div>
+
+        <div class="btn btn-rounded btn-light btn-sm">Americanas</a>  
+          <svg  xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </div>
+
+        <div class="btn btn-rounded btn-light btn-sm">FastShop</a>  
+          <svg  xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </div>
+
+        <div class="btn btn-rounded btn-light btn-sm">Ricardo Eletro</a>  
+          <svg  xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </div>
+
+        
+      </div>
+
+
+    </div>
+  </div>
+
+<!-- FORMAS DE PAGAMENTOS -->
+<div class="container-fluid mt-5 py-5 bg-light">
+  <div class="row" align="center">
+    <div class="col-sm-12">
+      <h5 class="pb-3">Formas de Pagamento</h5>
+      <img src="img/formas-de-pagamento.svg" alt="" width="500px">
+    </div>
+  </div>
+</div>
+
+ <footer class="bg-primary"></footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  
+  
+  <script>
+    $(document).ready(function() {
+  $("#myCarousel").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
+
+  </script>
+
+</body>
+
+</html>
